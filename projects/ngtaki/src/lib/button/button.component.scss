@@ -1,0 +1,50 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+button {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button.primary {
+    @include button-theme($primary);
+}
+
+button.secondary {
+    @include button-theme($secondary);
+}
+
+button.success {
+    @include button-theme($success);
+}
+
+button.danger {
+    @include button-theme($danger);
+}
+
+button.warning {
+    @include button-theme($warning);
+}
+
+button.info {
+    @include button-theme($info);
+}
+
+button.light {
+    @include button-theme($light);
+}
+
+button.dark {
+    @include button-theme($dark);
+}
+
+button.muted {
+    @include button-theme($muted);
+}
